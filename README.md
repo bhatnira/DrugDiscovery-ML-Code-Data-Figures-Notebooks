@@ -1,4 +1,4 @@
-# Compound Acitivity prediction & Drug Discovery Suite 🧬
+# Compound Acitivity Prediction & Drug Discovery Suite 🧬
 
 ## Overview
 
