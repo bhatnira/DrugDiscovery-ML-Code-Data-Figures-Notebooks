@@ -1,4 +1,4 @@
-# AChE Inhibitor Prediction & Drug Discovery Suite 🧬
+# Compound Acitivity prediction & Drug Discovery Suite 🧬
 
 ## Overview
 
