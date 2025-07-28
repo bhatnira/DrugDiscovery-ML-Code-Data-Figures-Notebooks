@@ -2,7 +2,7 @@
 
 ## Overview
 
-A comprehensive machine learning ecosystem for **Acetylcholinesterase (AChE) inhibitor prediction** and **drug discovery research**. This repository contains multiple interconnected projects implementing state-of-the-art AI/ML approaches for molecular activity prediction, featuring both production-ready applications and research notebooks with explainable AI techniques.
+A comprehensive machine learning ecosystem for **Compound Acitivity prediction** and **drug discovery research**. This repository contains multiple interconnected projects implementing state-of-the-art AI/ML approaches for molecular activity prediction, featuring both production-ready applications and research notebooks with explainable AI techniques.
 
 ## 🎯 Project Portfolio
 
