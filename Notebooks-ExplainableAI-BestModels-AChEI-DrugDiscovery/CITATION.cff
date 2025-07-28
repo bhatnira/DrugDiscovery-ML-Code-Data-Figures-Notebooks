@@ -1,0 +1,88 @@
+cff-version: 1.2.0
+title: >-
+  ExplainableAI-BestModels-AChEI-DrugDiscovery: A
+  Comparative Study of Machine Learning Models for
+  Acetylcholinesterase Inhibitor Discovery with
+  Explainable AI
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Nirajan
+    family-names: Bhattarai
+    orcid: 'https://orcid.org/0000-0000-0000-0000'
+    affiliation: Research Institution
+  - given-names: Marvin
+    family-names: Schulte
+    orcid: 'https://orcid.org/0000-0000-0000-0000'
+    affiliation: Research Institution
+repository-code: >-
+  https://github.com/bhatnira/ExplainableAI-BestModels-AChEI-DrugDiscovery
+abstract: >-
+  This repository contains a comprehensive collection of
+  Jupyter notebooks implementing and comparing various
+  machine learning models for Acetylcholinesterase
+  Inhibitor (AChEI) Drug Discovery with a focus on
+  Explainable AI (XAI). The project evaluates multiple
+  state-of-the-art molecular classification approaches
+  including transformer-based models (ChemBERTa), graph
+  convolutional networks, circular fingerprints, and
+  traditional molecular descriptors, with detailed model
+  interpretability analysis using attention
+  visualization, SHAP analysis, and molecular
+  substructure highlighting.
+keywords:
+  - machine learning
+  - drug discovery
+  - explainable AI
+  - acetylcholinesterase inhibitors
+  - molecular classification
+  - cheminformatics
+  - transformer models
+  - graph neural networks
+  - SHAP
+  - molecular fingerprints
+  - neurodegenerative diseases
+  - computational pharmacology
+license: All Rights Reserved
+commit: main
+version: 1.0.0
+date-released: '2025-01-28'
+url: >-
+  https://github.com/bhatnira/ExplainableAI-BestModels-AChEI-DrugDiscovery
+preferred-citation:
+  type: software
+  title: >-
+    ExplainableAI-BestModels-AChEI-DrugDiscovery: A
+    Comparative Study of Machine Learning Models for
+    Acetylcholinesterase Inhibitor Discovery with
+    Explainable AI
+  authors:
+    - given-names: Nirajan
+      family-names: Bhattarai
+      orcid: 'https://orcid.org/0000-0000-0000-0000'
+    - given-names: Marvin
+      family-names: Schulte
+      orcid: 'https://orcid.org/0000-0000-0000-0000'
+  year: 2025
+  url: >-
+    https://github.com/bhatnira/ExplainableAI-BestModels-AChEI-DrugDiscovery
+  repository-code: >-
+    https://github.com/bhatnira/ExplainableAI-BestModels-AChEI-DrugDiscovery
+  version: 1.0.0
+  license: All Rights Reserved
+  abstract: >-
+    This repository presents a comprehensive comparative
+    study of machine learning models for
+    acetylcholinesterase inhibitor discovery with emphasis
+    on explainable AI techniques. The work implements
+    multiple state-of-the-art approaches including
+    fine-tuned ChemBERTa transformers, graph convolutional
+    networks, circular fingerprint-based models, and
+    traditional molecular descriptor methods. Each model is
+    extensively analyzed using various interpretability
+    techniques including attention visualization, SHAP
+    values, and molecular substructure highlighting to
+    provide insights into the decision-making process for
+    drug discovery applications.

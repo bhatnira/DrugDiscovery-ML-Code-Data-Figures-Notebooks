@@ -1,0 +1,57 @@
+# Core scientific computing
+numpy==1.23.3
+pandas>=1.5.0
+scipy>=1.9.0
+
+# Machine learning
+scikit-learn>=1.1.0
+xgboost>=1.6.0
+lightgbm>=3.3.0
+catboost>=1.1.0
+tpot>=0.12.0
+
+# Deep learning frameworks
+torch>=1.12.0
+tensorflow>=2.9.0
+deepchem>=2.6.0
+
+# Graph neural networks
+torch-geometric>=2.1.0
+dgl>=0.9.0
+
+# Chemistry and molecular descriptors
+rdkit-pypi>=2022.3.0
+mordred>=1.2.0
+mol2vec>=0.1
+
+# Transformers and NLP
+transformers>=4.20.0
+tokenizers>=0.12.0
+
+# Data visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.9.0
+
+# Model interpretation
+shap>=0.41.0
+lime>=0.2.0
+
+# Jupyter and notebook support
+jupyter>=1.0.0
+ipykernel>=6.15.0
+ipywidgets>=7.7.0
+
+# Utilities
+tqdm>=4.64.0
+joblib>=1.1.0
+openpyxl>=3.0.0
+xlrd>=2.0.0
+
+# Optional: GPU support for PyTorch (uncomment if using CUDA)
+# torch-cuda>=11.7
+# torchvision>=0.13.0
+
+# Optional: Additional chemistry libraries
+# chembl-webresource-client>=0.10.0
+# pubchempy>=1.0.4

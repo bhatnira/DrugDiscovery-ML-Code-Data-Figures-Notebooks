@@ -1,0 +1,65 @@
+name: achei-regression
+channels:
+  - conda-forge
+  - defaults
+  - pytorch
+dependencies:
+  # Python version
+  - python=3.9
+
+  # Core Data Science
+  - pandas>=1.5.0
+  - numpy>=1.21.0
+  - scipy>=1.9.0
+
+  # Machine Learning
+  - scikit-learn>=1.1.0
+  - tensorflow>=2.10.0
+
+  # Molecular Informatics
+  - rdkit>=2022.09.1
+
+  # PyTorch for Deep Learning
+  - pytorch>=1.12.0
+  - torchvision>=0.13.0
+  - cpuonly  # Remove this line if you have CUDA GPU
+
+  # Data Visualization
+  - matplotlib>=3.5.0
+  - seaborn>=0.11.0
+  - plotly>=5.10.0
+
+  # Jupyter Environment
+  - jupyter>=1.0.0
+  - jupyterlab>=3.4.0
+  - ipywidgets>=7.7.0
+  - notebook>=6.4.0
+
+  # File I/O
+  - openpyxl>=3.0.10
+  - xlrd>=2.0.1
+
+  # Utilities
+  - tqdm>=4.64.0
+  - networkx>=2.8.0
+  - joblib>=1.1.0
+
+  # System utilities
+  - psutil>=5.9.0
+
+  # Development tools (optional)
+  - black>=22.6.0
+  - flake8>=5.0.0
+  - isort>=5.10.0
+
+  # pip dependencies (packages not available via conda)
+  - pip
+  - pip:
+    - deepchem>=2.7.0
+    - shap>=0.41.0
+    - lime>=0.2.0
+    - chembl-webresource-client>=0.10.0
+    - pubchempy>=1.0.4
+    - memory-profiler>=0.60.0
+    - pytest>=7.1.0
+    - pytest-cov>=3.0.0

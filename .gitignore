@@ -1,0 +1,52 @@
+# Large files that exceed GitHub limits
+*.pkl
+*.zip
+*.data-00000-of-00001
+*.h5
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large data files
+**/Publication Figures/
+**/Large_Files/
+
+# Model checkpoints over 50MB
+**/checkpoint-*/
+**/ckpt-*.data-*
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
