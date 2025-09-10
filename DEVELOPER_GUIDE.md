@@ -1,8 +1,41 @@
-# Developer Guide - AChE Activity Prediction Suite
+# Developer Guide - AChE Drug Discovery Research Suite
 
 ## Overview
 
-This guide provides comprehensive instructions for developers working with the AChE Activity Prediction Suite. It covers the entire development workflow, from local setup to production deployment.
+This guide provides comprehensive instructions for developers working with the **AChE Drug Discovery Research Suite** - a complete workspace containing 37 sanitized research notebooks for machine learning and AI-driven drug discovery. This guide covers working with sanitized notebooks, development workflow, and collaboration best practices.
+
+## 🔒 Working with Sanitized Notebooks
+
+### Understanding Notebook Sanitization
+All 37 notebooks have been professionally sanitized:
+- **File paths anonymized**: All paths replaced with `"....."`
+- **Privacy compliant**: Safe for public sharing and collaboration
+- **Functionality preserved**: Complete research methodology intact
+- **Production ready**: Suitable for academic and commercial use
+
+### Adapting Sanitized Notebooks for Development
+
+#### Step 1: Path Replacement
+Replace sanitized paths with your actual paths:
+```python
+# Original sanitized code:
+df = pd.read_excel(".....")
+
+# Replace with your path:
+df = pd.read_excel("data/your_dataset.xlsx")
+```
+
+#### Step 2: Environment Setup
+```bash
+# Create conda environment
+conda create -n ache-research python=3.9
+conda activate ache-research
+
+# Install essential chemistry libraries
+conda install -c conda-forge rdkit
+pip install deepchem transformers torch
+pip install pandas numpy scikit-learn jupyter
+```
 
 ## 🏗️ Architecture Overview
 

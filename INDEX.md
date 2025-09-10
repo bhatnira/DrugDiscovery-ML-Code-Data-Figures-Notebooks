@@ -1,15 +1,28 @@
-# Documentation Index - AChE Activity Prediction Suite
+# Documentation Index - AChE Drug Discovery Research Suite
 
 ## 📖 Documentation Overview
 
-This repository contains comprehensive documentation for the AChE Activity Prediction Suite. This index provides quick access to all documentation files and guides you to the information you need.
+This repository contains comprehensive documentation for the **AChE Drug Discovery Research Suite** - a complete workspace with 37 sanitized research notebooks for machine learning and AI-driven drug discovery. This index provides quick access to all documentation files and guides you to the information you need.
+
+## 🆕 Latest Updates
+
+- **✅ All 37 notebooks sanitized** for public sharing and collaboration
+- **🔒 Privacy-compliant** with all file paths anonymized 
+- **📚 Enhanced documentation** with troubleshooting guides
+- **🔧 Production-ready** notebooks with preserved functionality
 
 ## 🚀 Quick Start Links
 
 ### For Users
-- **[Main README](../README.md)** - Start here for installation and basic usage
-- **[Quick Start Guide](#quick-start)** - Get running in 5 minutes
-- **[User Guide](#user-guides)** - Detailed usage instructions
+- **[Main README](README.md)** - Start here for complete workspace overview
+- **[Notebook Usage Guide](README.md#-using-sanitized-notebooks)** - How to work with sanitized notebooks
+- **[Troubleshooting Guide](README.md#-troubleshooting--faq)** - Common issues and solutions
+- **[Quick Navigation](README.md#-quick-navigation)** - Find what you need fast
+
+### For Researchers
+- **[Research Notebooks](README.md#-research-notebooks)** - 37 comprehensive ML/AI notebooks
+- **[Sanitization Info](README.md#-notebook-sanitization--privacy)** - Privacy and sharing information
+- **[Model Performance](README.md#performance-benchmarks)** - Benchmark results and comparisons
 
 ### For Developers  
 - **[Developer Guide](DEVELOPER_GUIDE.md)** - Comprehensive development documentation

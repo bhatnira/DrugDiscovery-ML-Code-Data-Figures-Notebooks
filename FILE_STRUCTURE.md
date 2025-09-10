@@ -1,10 +1,70 @@
-# File Structure Documentation - AChE Activity Prediction Suite
+# File Structure Documentation - AChE Drug Discovery Research Suite
 
 ## Repository Overview
 
-This document provides a comprehensive overview of the file structure and organization of the AChE Activity Prediction Suite repository.
+This document provides a comprehensive overview of the file structure and organization of the **AChE Drug Discovery Research Suite** - a complete workspace containing 37 sanitized research notebooks and comprehensive documentation for machine learning and AI-driven drug discovery.
+
+## 🔒 Sanitization Status
+
+**✅ All notebooks have been professionally sanitized:**
+- **37/37 notebooks processed** with file paths anonymized
+- **Privacy compliant** - safe for public sharing and collaboration  
+- **Functionality preserved** - all research code intact
+- **Production ready** - suitable for academic and commercial use
 
 ```
+DrugDiscovery-ML-Code-Data-Figures-Notebooks/
+├── 📝 Research Notebooks (37 Sanitized Notebooks)
+│   ├── Notebooks-ML-AChEI-ClassificationModels-DrugDiscovery/    # 31 notebooks
+│   │   ├── Data_Cleaning_and_Preparation.ipynb
+│   │   ├── classificationModelling_*.ipynb                      # Traditional ML approaches
+│   │   ├── deepNet_*.ipynb                                      # Deep learning models
+│   │   ├── classificationModeling_MPNN.ipynb                    # Graph neural networks
+│   │   ├── FineTunedChemberta*.ipynb                           # Transformer models
+│   │   └── ModelInterpretation*.ipynb                          # Explainable AI
+│   │
+│   ├── Notebooks-ML-Regression-AChEI-DrugDiscovery/            # 4 notebooks
+│   │   ├── regressionModeling_RDKitFeatures.ipynb
+│   │   ├── regressionModeling_deepNet_RDKitFeatures.ipynb
+│   │   ├── RegressionModelling_circularFingerprint.ipynb
+│   │   └── RegressionModeling_GraphConvolutionalNetwork.ipynb
+│   │
+│   └── Notebooks-ExplainableAI-BestModels-AChEI-DrugDiscovery/  # 5 notebooks
+│       ├── ModelInterpretation_GraphConvolutionalNetwork.ipynb
+│       ├── ModelInterpretation_RdkitFeatureBasedAutoMLModel.ipynb
+│       ├── ModelInterpretability_deepNet_rdkit.ipynb
+│       ├── ModelInterpretationAndCompoundGeneration_*.ipynb
+│       └── FineTunedChemberta(DeepChem_ChemBERTa_10M_MLM).ipynb
+│
+├── 📊 Research Data & Results  
+│   ├── Datasets/                                               # Training and validation data
+│   │   ├── StandarizedSmiles_originalDataset_ChEMBL220.xlsx   # Primary dataset (15K compounds)
+│   │   ├── ClassificationAnalysis_crossSpeciesDataset/        # Species-specific data
+│   │   ├── ClassificationModelandEval/                        # Model evaluation data
+│   │   ├── Regression/                                         # Regression analysis data
+│   │   └── RegressionAnalysis_crossSpeciesDataset/            # Cross-species regression
+│   │
+│   └── Final_results_data/                                     # Analysis results
+│       ├── Visualization.ipynb                                 # Results visualization (sanitized)
+│       ├── comparisonOfAllAlgorithm_Regression.xlsx
+│       ├── comparisonOfDifferentAlgorithm_AllModel.xlsx
+│       ├── ViolinPlot_EnsembleVsClassical.xlsx
+│       └── *.xlsx                                             # Various comparison files
+│
+├── 📚 Comprehensive Documentation
+│   ├── README.md                                              # Complete workspace overview
+│   ├── INDEX.md                                               # Documentation navigation
+│   ├── FILE_STRUCTURE.md                                      # This file structure guide
+│   ├── API_REFERENCE.md                                       # API documentation
+│   ├── DEVELOPER_GUIDE.md                                     # Development guide
+│   ├── ROOT_DIRECTORY_FILES.md                                # Root files analysis
+│   └── ROOT_FILES_REFERENCE.md                                # Root files reference
+│
+└── 🔧 System Files
+    ├── .git/                                                  # Git version control
+    └── .gitignore                                             # Git exclusions
+
+## Alternative Repository Structure (Referenced)
 AChE-Activity-Pred-1/
 ├── 📱 Application Entry Points
 │   ├── main_app.py                     # Primary Streamlit app with iOS-style interface

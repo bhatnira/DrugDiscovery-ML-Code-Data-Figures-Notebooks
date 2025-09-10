@@ -1,4 +1,211 @@
-# API Reference - AChE Activity Prediction Suite
+# API Reference Documentation - AChE Drug Discovery Research Suite
+
+## 📖 Overview
+
+This API reference provides comprehensive documentation for the **AChE Drug Discovery Research Suite** containing 37 sanitized research notebooks for machine learning and AI-driven drug discovery. All notebooks have been professionally sanitized with file paths anonymized for secure sharing and collaboration.
+
+## 🔒 Sanitization Information
+
+**Status**: ✅ All 37 notebooks sanitized  
+**Privacy**: 🛡️ All sensitive paths replaced with `"....."`  
+**Functionality**: ✅ Complete research methodology preserved  
+**Sharing**: 👥 Safe for public repositories and collaboration
+
+## 📝 Notebook Collections API
+
+### Classification Models Collection (31 Notebooks)
+**Location**: `Notebooks-ML-AChEI-ClassificationModels-DrugDiscovery/`
+
+#### Core Data Processing
+##### `Data_Cleaning_and_Preparation.ipynb`
+**Purpose**: Dataset preprocessing and standardization  
+**Input**: Raw ChEMBL data  
+**Output**: Standardized molecular datasets  
+**Key Functions**:
+- SMILES standardization and validation
+- IC50 threshold-based classification
+- Cross-species dataset preparation
+- Molecular weight filtering (<800 Da)
+
+#### Traditional ML Approaches
+
+##### `classificationModelling_RDKiTFeatures.ipynb`
+**Purpose**: RDKit molecular descriptor-based classification  
+**Features**: 200+ molecular properties and topological indices  
+**Models**: Random Forest, SVM, XGBoost, AdaBoost  
+**Performance**: ~0.87 ROC-AUC  
+
+##### `classificationModelling_circularFingerprint.ipynb`
+**Purpose**: Morgan circular fingerprint-based classification  
+**Features**: Morgan fingerprints (radius 2-3, 1024-2048 bits)  
+**Models**: Ensemble methods with fingerprint optimization  
+**Performance**: ~0.89 ROC-AUC  
+
+##### `classificationModelling_MACCSkeysFeature.ipynb`
+**Purpose**: MACCS structural keys analysis  
+**Features**: 166-bit structural keys for pharmacophore analysis  
+**Models**: Traditional ML with structural fingerprints  
+
+##### `classificationModelling_PubchemFeatures.ipynb`
+**Purpose**: PubChem database-derived fingerprints  
+**Features**: Database-specific chemical representations  
+**Models**: ML models with database fingerprints  
+
+##### `classificationModelling_modredFeatures.ipynb`
+**Purpose**: Reduced molecular descriptor analysis  
+**Features**: Dimensionality-reduced molecular properties  
+**Models**: Feature selection and traditional ML  
+
+##### `classificationModelling_mol2vecFeatures.ipynb`
+**Purpose**: Mol2Vec molecular embeddings  
+**Features**: Unsupervised molecular embeddings  
+**Models**: Deep learning with molecular embeddings  
+
+#### Deep Learning Approaches
+
+##### `deepNet_RDKit.ipynb`
+**Purpose**: Deep neural networks with RDKit features  
+**Architecture**: Dense layers with dropout and batch normalization  
+**Features**: RDKit molecular descriptors  
+**Performance**: Enhanced performance over traditional ML  
+
+##### `deepnet_circularfingerprint.ipynb`
+**Purpose**: Deep learning with circular fingerprints  
+**Architecture**: Feedforward networks optimized for fingerprints  
+**Features**: Morgan circular fingerprints  
+
+##### `deepNet_Pubchem.ipynb`
+**Purpose**: Neural networks with PubChem features  
+**Architecture**: Deep networks for database fingerprints  
+
+##### `deepnet_MACCSkeys.ipynb`
+**Purpose**: Deep learning with MACCS keys  
+**Architecture**: Networks optimized for structural keys  
+
+##### `deepNet_modred.ipynb`
+**Purpose**: Neural networks with reduced features  
+**Architecture**: Optimized for dimensionality-reduced data  
+
+##### `deepnet_mol2Vec.ipynb`
+**Purpose**: Deep learning with Mol2Vec embeddings  
+**Architecture**: Networks for molecular embeddings  
+
+#### Graph Neural Networks
+
+##### `classificationModelling_graphConvAndGroover.ipynb`
+**Purpose**: Graph convolutional networks for molecular graphs  
+**Architecture**: GraphConv layers with molecular graph representation  
+**Features**: Node (atom) and edge (bond) feature matrices  
+**Performance**: ~0.91 ROC-AUC  
+
+##### `classificationModeling_GraphAttentionTransformer.ipynb`
+**Purpose**: Graph attention mechanisms  
+**Architecture**: Attention-based graph neural networks  
+**Features**: Attention weights for interpretability  
+
+##### `classificationModeling_MPNN.ipynb`
+**Purpose**: Message Passing Neural Networks  
+**Architecture**: MPNN with molecular graph processing  
+**Performance**: ~0.93 ROC-AUC (best overall)  
+
+#### Transformer Models
+
+##### `FineTunedChemberta(DeepChem_ChemBERTa_5M_MLM).ipynb`
+**Purpose**: ChemBERTa 5M parameter model fine-tuning  
+**Architecture**: Transformer with 5M parameters  
+**Features**: SMILES tokenization and attention mechanisms  
+
+##### `FineTunedChemberta(DeepChem_ChemBERTa_10M_MLM).ipynb`
+**Purpose**: ChemBERTa 10M parameter model fine-tuning  
+**Architecture**: Transformer with 10M parameters  
+**Performance**: ~0.91 ROC-AUC  
+
+##### `FineTunedChemberta(DeepChem_ChemBERTa_77M_MLM).ipynb`
+**Purpose**: ChemBERTa 77M parameter model fine-tuning  
+**Architecture**: Large transformer with 77M parameters  
+**Features**: Advanced attention mechanisms and tokenization  
+
+##### `FineTunedChemberta(DeepChem_SmilesTokenizer_PubChem_1M).ipynb`
+**Purpose**: Custom SMILES tokenizer with PubChem training  
+**Architecture**: Custom tokenization strategy  
+**Features**: PubChem-trained tokenizer  
+
+### Regression Models Collection (4 Notebooks)
+**Location**: `Notebooks-ML-Regression-AChEI-DrugDiscovery/`
+
+##### `regressionModeling_RDKitFeatures.ipynb`
+**Purpose**: Traditional regression with RDKit descriptors  
+**Target**: Continuous IC50/pIC50 prediction  
+**Models**: SVR, Random Forest Regressor, XGBoost  
+**Performance**: R² ~0.69  
+
+##### `regressionModeling_deepNet_RDKitFeatures.ipynb`
+**Purpose**: Deep neural network regression  
+**Architecture**: Deep networks for continuous prediction  
+**Performance**: R² ~0.75  
+
+##### `RegressionModelling_circularFingerprint.ipynb`
+**Purpose**: Circular fingerprint-based regression  
+**Features**: Morgan fingerprints for continuous prediction  
+**Performance**: R² ~0.72  
+
+##### `RegressionModeling_GraphConvolutionalNetwork.ipynb`
+**Purpose**: Graph neural network regression  
+**Architecture**: Graph convolution for continuous targets  
+**Performance**: R² ~0.78 (best regression performance)  
+
+### Explainable AI Collection (5 Notebooks)
+**Location**: `Notebooks-ExplainableAI-BestModels-AChEI-DrugDiscovery/`
+
+##### `ModelInterpretation_GraphConvolutionalNetwork.ipynb`
+**Purpose**: Graph neural network interpretability  
+**Techniques**: Node importance, edge weights, attention visualization  
+**Features**: Atomic contribution analysis  
+
+##### `ModelInterpretation_RdkitFeatureBasedAutoMLModel.ipynb`
+**Purpose**: Feature importance analysis for AutoML models  
+**Techniques**: SHAP values, feature importance ranking  
+**Features**: Global and local explanations  
+
+##### `ModelInterpretability_deepNet_rdkit.ipynb`
+**Purpose**: Deep network interpretability  
+**Techniques**: Layer-wise relevance propagation, gradient analysis  
+
+##### `ModelInterpretationAndCompoundGeneration_BestAggregrateModelCircularFingerprint.ipynb`
+**Purpose**: Compound generation and design using best models  
+**Features**: Molecular generation, structure-activity insights  
+**Applications**: Lead compound optimization  
+
+##### `FineTunedChemberta(DeepChem_ChemBERTa_10M_MLM).ipynb`
+**Purpose**: Transformer attention analysis and interpretation  
+**Techniques**: Attention weight visualization, token importance  
+**Features**: Sequential pattern analysis in SMILES  
+
+## 🔧 Working with Sanitized Notebooks
+
+### Path Replacement Requirements
+All notebooks contain sanitized paths (`"....."`) that need replacement:
+
+```python
+# Common replacements needed:
+df = pd.read_excel(".....")  # Replace with your data path
+model.save(".....")          # Replace with your model path
+results.to_csv(".....")      # Replace with your output path
+```
+
+### Environment Setup
+```bash
+# Essential dependencies
+conda install -c conda-forge rdkit
+pip install deepchem transformers torch
+pip install pandas numpy scikit-learn
+```
+
+### Data Format Requirements
+Notebooks expect datasets with:
+- **Smiles**: SMILES notation strings
+- **IC50**: Activity values in nM  
+- **classLabel**: Binary classification (0/1)
 
 ## Overview
 

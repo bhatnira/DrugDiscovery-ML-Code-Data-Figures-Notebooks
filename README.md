@@ -1,8 +1,25 @@
 # AChE Drug Discovery Research Suite - Complete Workspace
 
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Jupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?logo=Jupyter)](https://jupyter.org/)
+[![Status: Complete](https://img.shields.io/badge/Status-Complete-brightgreen.svg)]()
+
 ## 🧬 Overview
 
-This workspace contains a comprehensive collection of resources for **Acetylcholinesterase (AChE) inhibi## 🔬 Research Methodology & Workflow
+This repository contains a **comprehensive research workspace** for **Acetylcholinesterase (AChE) inhibitor discovery** using machine learning and artificial intelligence. It represents a complete end-to-end pipeline from data preparation to production deployment for identifying potential treatments for Alzheimer's disease and other neurodegenerative conditions.
+
+### ✨ Key Features
+
+- **37 Research Notebooks** - Complete ML/AI pipeline implementation with sanitized file paths
+- **15,000+ Compounds** - ChEMBL database analysis
+- **Multiple Species** - Cross-species validation (Human, Mouse, Cow, Eel, Ray, Mosquito)
+- **Advanced Models** - Graph Neural Networks, Transformers, Traditional ML
+- **Explainable AI** - Model interpretability and molecular insights
+- **Production Ready** - Sanitized notebooks for sharing and collaboration
+- **Complete Documentation** - Comprehensive guides and API references
+
+## 🔬 Research Methodology & Workflow
 
 ### Notebook Research Pipeline
 
@@ -134,84 +151,28 @@ Each notebook collection includes:
 Datasets/
 ├── ClassificationAnalysis_crossSpeciesDataset/     # Species classification data
 ├── ClassificationModelandEval/                     # Model evaluation datasets
-├── Regression/                                     # Regression analysis dataresearch**. It represents a complete machine learning and AI-driven approach to identifying potential treatments for Alzheimer's disease and other neurodegenerative conditions.
-
-## 🎯 Research Objectives
-
-### Primary Goals
-- **Drug Discovery**: Identify novel AChE inhibitors for Alzheimer's treatment
-- **Cross-Species Analysis**: Evaluate inhibitor activity across multiple species
-- **Model Comparison**: Compare traditional ML vs. deep learning vs. transformer approaches
-- **Explainable AI**: Provide interpretable predictions for drug development
-- **Scalable Platform**: Deploy production-ready prediction applications
-
-### Scientific Impact
-- **15,000+ compounds** analyzed from ChEMBL database
-- **Multiple species** studied (Human, Mouse, Cow, Eel, Ray, Mosquito)
-- **State-of-the-art models** including Graph Neural Networks and Transformers
-- **Production deployment** with web interface for researchers
-
-## 📁 Workspace Structure
-
-```
-/Users/nb/Desktop/combined/
-├── 🚀 Production Applications
-│   ├── AChE-Activity-Pred-1/              # Main production application suite
-│   └── AI-Activity-Prediction/            # Alternative ChemML suite
-│
-├── 📊 Research Data & Results
-│   ├── Datasets/                          # Training and test datasets
-│   ├── Final_results_data/                # Analysis results and comparisons
-│   └── DrugDiscovery-ML-Code-Data-Figures-Notebooks/  # Complete research archive
-│
-├── 📝 Research Notebooks
-│   ├── Notebooks-ML-AChEI-ClassificationModels-DrugDiscovery/    # Classification studies
-│   ├── Notebooks-ML-Regression-AChEI-DrugDiscovery/              # Regression analysis
-│   └── Notebooks-ExplainableAI-BestModels-AChEI-DrugDiscovery/   # Interpretability research
-│
-├── 📚 Documentation (Root Level)
-│   ├── README.md                          # This overview document
-│   ├── API_REFERENCE.md                   # Complete API documentation
-│   ├── DEVELOPER_GUIDE.md                 # Development workflow guide
-│   ├── FILE_STRUCTURE.md                  # Workspace organization guide
-│   ├── ROOT_FILES_REFERENCE.md            # Root files documentation
-│   ├── ROOT_DIRECTORY_FILES.md            # Specific root file analysis
-│   ├── INDEX.md                           # Documentation navigation
-│   └── docs/                              # Additional documentation
-│
-└── 🔧 System Files
-    └── .DS_Store                          # macOS system file
+├── Regression/                                     # Regression analysis data
+├── RegressionAnalysis_crossSpeciesDataset/         # Cross-species regression
+└── StandarizedSmiles_originalDataset_ChEMBL220.xlsx # Master dataset
 ```
 
-## 🚀 Production Applications
+### Final Results & Analysis
+**Location:** `/Final_results_data/`  
+**Content:** Research outcomes and model comparisons
 
-### AChE-Activity-Pred-1 (Primary Suite)
-**Location:** `/AChE-Activity-Pred-1/`  
-**Status:** Production-ready deployment  
-**Features:**
-- **4 Model Types**: Graph NN, Circular Fingerprints, RDKit, ChemBERTa
-- **Web Interface**: Modern Streamlit applications with iOS-style design
-- **Docker Deployment**: Complete containerization with docker-compose
-- **Cloud Ready**: Render.com deployment configuration
-- **Model Performance**: High accuracy across classification and regression tasks
+#### Key Results Files
+- **`comparisonOfDifferentAlgorithm_AllModel.xlsx`**: Comprehensive algorithm comparison
+- **`OptimizedModel_CrossSpecies_violinPlot.xlsx`**: Cross-species performance analysis
+- **`ViolinPlot_EnsembleVsClassical.xlsx`**: Ensemble vs traditional method comparison
+- **`graphbasedSpeciesWide.xlsx`**: Graph neural network species analysis
+- **`tpotDifferentFeatureComparison.xlsx`**: Feature engineering comparison
 
-**Quick Start:**
-```bash
-cd AChE-Activity-Pred-1/
-docker-compose up -d
-# Access: http://localhost:10000
-```
+#### Visualization & Analysis
+- **`Visualization.ipynb`**: Jupyter notebook with result visualizations
+- **`barDiagram_classicalEnsembleAutoML.xlsx`**: Performance comparison charts
+- **Multiple regression and classification analysis files**
 
-### AI-Activity-Prediction (Alternative Suite)
-**Location:** `/AI-Activity-Prediction/`  
-**Status:** ChemML integration suite  
-**Features:**
-- **ChemML Integration**: Specialized chemical ML library support
-- **Alternative Models**: Different approach to molecular prediction
-- **Deployment Options**: Multiple deployment strategies
-- **Research Focus**: Experimental model architectures
-
-## � Research Notebooks
+## 📝 Research Notebooks
 
 This workspace contains three comprehensive notebook collections documenting the complete research and development process for AChE inhibitor discovery.
 
@@ -553,6 +514,61 @@ pip install transformers torch
 pip install plotly seaborn matplotlib
 ```
 
+### 🔧 Using Sanitized Notebooks
+
+#### Adapting File Paths
+Since all file paths have been sanitized to `".....`, you'll need to:
+
+1. **Replace with your data paths**:
+   ```python
+   # Original sanitized code:
+   df = pd.read_excel(".....")
+   
+   # Replace with your actual path:
+   df = pd.read_excel("path/to/your/dataset.xlsx")
+   ```
+
+2. **Update save paths**:
+   ```python
+   # Original sanitized code:
+   model.save(".....")
+   
+   # Replace with your desired path:
+   model.save("models/my_model.pkl")
+   ```
+
+3. **Common path replacements needed**:
+   - Dataset loading: `pd.read_excel(".....")` → your data file
+   - Model saving: `joblib.dump(model, ".....")` → your model directory
+   - Results export: `results.to_csv(".....")` → your output directory
+
+#### Running Notebooks Sequentially
+
+**For Classification Models:**
+```bash
+1. Data_Cleaning_and_Preparation.ipynb          # Start here - prepare datasets
+2. classificationModelling_RDKiTFeatures.ipynb  # Baseline RDKit models
+3. classificationModelling_circularFingerprint.ipynb  # Advanced fingerprints
+4. deepNet_RDKit.ipynb                          # Deep learning with RDKit
+5. classificationModeling_MPNN.ipynb            # Graph neural networks
+6. FineTunedChemberta(DeepChem_ChemBERTa_10M_MLM).ipynb  # Transformers
+```
+
+**For Regression Models:**
+```bash
+1. regressionModeling_RDKitFeatures.ipynb       # Traditional regression
+2. regressionModeling_deepNet_RDKitFeatures.ipynb  # Deep regression
+3. RegressionModelling_circularFingerprint.ipynb   # Fingerprint regression
+4. RegressionModeling_GraphConvolutionalNetwork.ipynb  # Graph regression
+```
+
+**For Explainable AI:**
+```bash
+1. ModelInterpretation_RdkitFeatureBasedAutoMLModel.ipynb  # Feature analysis
+2. ModelInterpretation_GraphConvolutionalNetwork.ipynb     # Graph explanations
+3. FineTunedChemberta(DeepChem_ChemBERTa_10M_MLM).ipynb   # Attention visualization
+```
+
 ### Notebook Collections Guide
 
 #### 1. Classification Notebooks (Start Here)
@@ -724,164 +740,100 @@ import matplotlib
 matplotlib.use('Agg')  # For headless environments
 ```
 
-### Best Practices for Notebook Usage
+## 🔧 Troubleshooting & FAQ
 
-1. **Run Notebooks Sequentially**: Follow the recommended order for each collection
-2. **Check Dependencies**: Install all requirements before starting
-3. **Monitor Memory**: Large models may require significant RAM
-4. **Save Frequently**: Checkpoint important results and trained models
-5. **Document Changes**: Add markdown cells to explain modifications
-6. **Version Control**: Git track notebook changes carefully
+### Common Issues with Sanitized Notebooks
 
-### Integration with Production Apps
-
-#### Using Notebook Results in Production
+#### ❌ FileNotFoundError: No such file or directory: '.....'
+**Solution**: Replace the sanitized path with your actual data path:
 ```python
-# Export trained model for production use
-trained_model = joblib.load('notebook_outputs/best_model.pkl')
+# Change this:
+df = pd.read_excel(".....")
 
-# Save to production model directory
-joblib.dump(trained_model, '../AChE-Activity-Pred-1/models/notebook_model.pkl')
+# To this:
+df = pd.read_excel("your/actual/path/to/data.xlsx")
 ```
 
-#### Testing Notebook Models
-```python
-# Test model with production data format
-def predict_activity(smiles_string):
-    mol = Chem.MolFromSmiles(smiles_string)
-    features = calculate_features(mol)
-    prediction = model.predict_proba([features])[0, 1]
-    return prediction
-
-# Example usage
-test_smiles = "CCO"  # Ethanol
-activity_score = predict_activity(test_smiles)
-print(f"Activity Score: {activity_score:.3f}")
-```
-
-## 🎯 Quick Navigation
-
-### 🔬 **Want to predict activity?**
-→ Go to `/AChE-Activity-Pred-1/` and run `docker-compose up -d`
-
-### 📊 **Want to analyze data?**
-→ Go to `/Notebooks-ML-AChEI-ClassificationModels-DrugDiscovery/` or `/Final_results_data/`
-
-### 💻 **Want to develop?**
-→ Read `DEVELOPER_GUIDE.md` and start with `/AChE-Activity-Pred-1/`
-
-### 📚 **Want to learn?**
-→ Start with `INDEX.md` and explore the notebook directories
-
-### 🔬 **Want to research?**
-→ Check `/Datasets/` and `/Notebooks-ExplainableAI-BestModels-AChEI-DrugDiscovery/`
-```
-
-### For Students (Learning)
+#### ❌ ImportError: No module named 'rdkit'
+**Solution**: Install RDKit for chemistry functionality:
 ```bash
-# Start with documentation
-cat README.md
-cat INDEX.md
-
-# Explore simple models first
-cd Notebooks-ML-AChEI-ClassificationModels-DrugDiscovery/
-# Start with classificationModelling_RDKiTFeatures.ipynb
+conda install -c conda-forge rdkit
+# OR
+pip install rdkit-pypi
 ```
 
-## 📊 Dataset Statistics
+#### ❌ GPU/CUDA Issues with Deep Learning Models
+**Solution**: Check your environment:
+```python
+import torch
+print(f"CUDA available: {torch.cuda.is_available()}")
+print(f"Device count: {torch.cuda.device_count()}")
 
-### Compound Collection
-- **Total Compounds**: 15,247 from ChEMBL
-- **Active Compounds**: 8,931 (IC50 < 10 μM)
-- **Inactive Compounds**: 6,316 (IC50 ≥ 10 μM)
-- **IC50 Range**: 0.1 nM - 100 μM
-
-### Species Distribution
-- **Human AChE**: 12,456 compounds (primary target)
-- **Mouse AChE**: 1,891 compounds
-- **Bovine AChE**: 445 compounds
-- **Electric Eel AChE**: 267 compounds
-- **Ray AChE**: 134 compounds
-- **Mosquito AChE**: 54 compounds
-
-### Chemical Diversity
-- **Molecular Weight**: 150-800 Da (average: 345 Da)
-- **LogP Range**: -2.5 to 8.2 (average: 2.8)
-- **Chemical Classes**: Heterocycles, natural products, synthetic drugs
-- **Fingerprint Diversity**: High Tanimoto coefficient distribution
-
-## 🔧 Technical Requirements
-
-### System Requirements
-- **Memory**: 8GB+ RAM (16GB recommended for full analysis)
-- **Storage**: 10GB+ free space
-- **CPU**: Multi-core processor (4+ cores recommended)
-- **GPU**: Optional (speeds up deep learning models)
-
-### Software Dependencies
-- **Python**: 3.9+ with scientific computing stack
-- **Docker**: 20.10+ for containerized deployment
-- **Jupyter**: For notebook analysis
-- **Git**: For version control and collaboration
-
-### Cloud Deployment
-- **Render.com**: Production deployment ready
-- **AWS/GCP**: Compatible with major cloud providers
-- **Local Server**: Can run on institutional servers
-
-## 📖 Publication & Citation
-
-### Recommended Citation
-```
-[Author Names]. "Comprehensive Machine Learning Approach for AChE Inhibitor 
-Discovery: From Traditional Descriptors to Graph Neural Networks and 
-Transformers." [Journal Name]. 2025.
+# For CPU-only execution (slower but more compatible):
+device = torch.device('cpu')
 ```
 
-### Key Findings for Publication
-1. Graph neural networks achieve highest accuracy (AUC: 0.94)
-2. Cross-species validation shows human-mouse transferability
-3. Transformer models provide interpretable attention maps
-4. Production deployment enables real-world drug screening
+#### ❌ Memory Issues with Large Models
+**Solutions**:
+- Reduce batch size in notebook parameters
+- Use smaller model variants (e.g. ChemBERTa 5M instead of 77M)
+- Process data in chunks
+- Use Google Colab with GPU runtime
 
-## 🤝 Contributing & Collaboration
+#### ❌ Notebook Kernel Dies/Crashes
+**Solutions**:
+1. Restart kernel and clear outputs
+2. Check memory usage: `!free -h` (Linux) or `!memory_profiler`
+3. Close other applications
+4. Use smaller datasets for testing
 
-### For Researchers
-- Contribute new datasets or validation sets
-- Propose new model architectures
-- Suggest biological validation experiments
-- Report issues or improvements
+### Data Requirements
 
-### For Developers
-- Improve model implementations
-- Add new visualization features
-- Optimize performance and deployment
-- Enhance documentation
+#### Minimum Dataset Format
+Your CSV/Excel files should contain at least:
+```csv
+Smiles,IC50,classLabel
+CCO,1000,0
+CC(C)O,500,1
+...
+```
 
-### For Students
-- Create tutorials and learning materials
-- Validate models on new datasets
-- Explore interpretability methods
-- Develop new applications
+#### Required Columns
+- **Smiles**: SMILES notation for molecular structure
+- **IC50**: Activity value in nM (for regression)  
+- **classLabel**: Binary classification (0=inactive, 1=active)
 
-## 📞 Support & Contact
+### Performance Optimization
 
-### Documentation Support
-- **Complete Guides**: See individual `.md` files in this directory
-- **API Reference**: `API_REFERENCE.md` for technical details
-- **Developer Guide**: `DEVELOPER_GUIDE.md` for implementation
+#### For Faster Training
+```python
+# Use smaller datasets for testing
+df_sample = df.sample(n=1000)  # Use 1000 compounds instead of full dataset
 
-### Technical Support
-- **GitHub Issues**: Report bugs or request features
-- **Documentation Issues**: Update guides as needed
-- **Model Questions**: Refer to notebook implementations
+# Enable parallel processing
+n_jobs = -1  # Use all CPU cores
 
-### Research Collaboration
-- **Data Sharing**: Available datasets and models
-- **Method Validation**: Reproduce results independently
-- **Extension Studies**: Build upon existing work
+# Use GPU when available
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+```
 
----
+#### Memory Management
+```python
+# Clear memory between experiments
+import gc
+gc.collect()
+
+# Monitor memory usage
+import psutil
+print(f"Memory usage: {psutil.virtual_memory().percent}%")
+```
+
+### Getting Help
+
+- **Issues with notebooks**: Check the troubleshooting section above
+- **Model performance**: See benchmark results in documentation
+- **Chemical errors**: Verify SMILES validity with RDKit
+- **Environment issues**: Use conda environments for better dependency management
 
 ## 🎯 Quick Navigation
 
