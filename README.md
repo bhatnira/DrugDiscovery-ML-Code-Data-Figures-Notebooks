@@ -123,15 +123,6 @@ Each notebook collection includes:
 4. **Ensemble Methods** combining multiple representations achieve robust performance
 5. **Explainable AI** enables medicinal chemistry insights for lead optimization
 
-#### Citation Format
-```bibtex
-@software{bhattarai2024ache,
-  title={AChE Drug Discovery Research Suite: ML and AI for Alzheimer's Treatment},
-  author={Bhattarai, Nirajan and Schulte, Marvin},
-  year={2024},
-  url={https://github.com/bhatnira/AChE-Activity-Pred-1}
-}
-```
 
 ## 📊 Research Data & Analysis
 
